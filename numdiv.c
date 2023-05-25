@@ -10,11 +10,11 @@ int main(){
   scanf("%d %d %d", &a, &b, &c);
 
   sum = a*b*c;
-  printf("sum : %d\n", sum);
+  // printf("sum : %d\n", sum);
 
   while(1){
     count = sum%10;
-    sum = sum/10;
+    sum /= 10;
     t[count] += 1;
     //printf("count : %d || sum = %d || t[%d] = %d\n", count, sum, count, t[count]);
     if(sum == 0){
